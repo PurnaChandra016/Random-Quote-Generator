@@ -1,0 +1,12 @@
+const quotes = [
+  "The best way to predict the future is to invent it. - Alan Kay",
+  "Stay hungry, stay foolish. - Steve Jobs",
+  "Code is like humor. When you have to explain it, it’s bad. - Cory House",
+  "Simplicity is the soul of efficiency. - Austin Freeman",
+  "The only way to do great work is to love what you do. - Steve Jobs",
+];
+
+function getQuote() {
+  const randomIndex = Math.floor(Math.random() * quotes.length);
+  document.getElementById("quote").innerText = quotes[randomIndex];
+}
